@@ -1,0 +1,54 @@
+{
+  "properties": [
+    {
+      "name": "kuark.jwt.jwt-id",
+      "type": "java.lang.String",
+      "description": "Require a specific JWT Id (\"jti\") claim."
+    },
+    {
+      "name": "kuark.jwt.issuer",
+      "type": "java.lang.String",
+      "description": "Require a specific Issuer (\"iss\") claim."
+    },
+    {
+      "name": "kuark.jwt.audience",
+      "type": "java.lang.String[]",
+      "description": "Require a specific Audience (\"aud\") claim."
+    },
+    {
+      "name": "kuark.jwt.subject",
+      "type": "java.lang.String",
+      "description": "Require a specific Subject (\"sub\") claim."
+    },
+    {
+      "name": "kuark.jwt.auth0.algorithm",
+      "type": "java.lang.String",
+      "description": "The algorithm used to sign the JWT token.",
+      "defaultValue": "hs256"
+    },
+    {
+      "name": "kuark.jwt.auth0.secret",
+      "type": "java.lang.String",
+      "description": "The secret used to sign the JWT token."
+    }
+  ],
+  "hints": [
+    {
+      "name": "kuark.jwt.auth0.algorithm",
+      "values": [
+        {
+          "value": "hs256",
+          "description": "HMAC SHA-256 Algorithm."
+        },
+        {
+          "value": "hs384",
+          "description": "HMAC SHA-384 Algorithm."
+        },
+        {
+          "value": "hs512",
+          "description": "HMAC SHA-512 Algorithm."
+        }
+      ]
+    }
+  ]
+}

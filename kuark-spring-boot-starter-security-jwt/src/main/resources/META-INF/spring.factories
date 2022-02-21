@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  io.kuark.spring.jwt.auth0.Auth0JwtAutoConfiguration.HS256,\
+  io.kuark.spring.jwt.auth0.Auth0JwtAutoConfiguration.HS384,\
+  io.kuark.spring.jwt.auth0.Auth0JwtAutoConfiguration.HS512,\
+  io.kuark.spring.jwt.auth0.Auth0JwtAutoConfiguration,\
+  io.kuark.spring.jwt.JwtControllerAutoConfiguration

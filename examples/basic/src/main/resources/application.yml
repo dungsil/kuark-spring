@@ -1,0 +1,5 @@
+kuark:
+  jwt:
+    auth0:
+      algorithm: hs512
+      secret: 'secret'
